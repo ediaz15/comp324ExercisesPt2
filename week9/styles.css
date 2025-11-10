@@ -36,12 +36,10 @@ body {
 
 .midGridItems{
     text-align: center;
-    border: 2px dotted gray;
+    border: 2px dotted red;
 }
-.midSubGrid{
-    display: subgrid;
-    padding: 20%;
-    margin-bottom: 10px;
-    grid-template-columns: 1fr;
-    border: 2px solid gray;
+
+.ImageSection{
+    padding: 10%;
+    border: 2px dotted blue;
 }
