@@ -13,6 +13,7 @@ body {
     /*Could use grid gap but would need me to use same values i think for the gutters*/
     grid-column-gap: 30px
 }
+
 .gridItems{
     padding: 100px;
     text-align: center;
@@ -25,6 +26,9 @@ body {
 
 
 .midContainer{
+    margin: auto;
+    heigh: 50%;
+    width: 75%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
