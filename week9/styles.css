@@ -2,18 +2,16 @@ body {
     margin: 0;
 }
 
-.parentContainer{
+.topContainer{
     display: grid;
     border: 2px solid black;
     /*explicit grid specifications, fr as in fractional unit like a fraction of the space in container if that makes sense*/
-    grid-template-columns: repeat(3,2fr);
-    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
     /*Should only apply to the implicit grid*/
-    grid-auto-rows: minmax(200px, auto);
-    grid-auto-columns: minmax(200px, auto);
+    grid-auto-columns: minmax(0, 2fr);
     /*Could use grid gap but would need me to use same values i think for the gutters*/
-    grid-row-gap: 50px;
-    grid-column-gap: 25px
+    grid-column-gap: 30px
 }
 .gridItems{
     padding: 100px;
@@ -23,4 +21,27 @@ body {
 
 .gridItems:nth-child(even){
     border: 2px solid black;
+}
+
+
+.midContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border: 2px solid black;
+    /*grid gap here covers both column and row gutter gap!*/
+    grid-gap: 10px;
+    margin-top: 5%;
+}
+
+.midGridItems{
+    text-align: center;
+    border: 2px dotted gray;
+}
+.midSubGrid{
+    display: subgrid;
+    padding: 20%;
+    margin-bottom: 10px;
+    grid-template-columns: 1fr;
+    border: 2px solid gray;
 }
