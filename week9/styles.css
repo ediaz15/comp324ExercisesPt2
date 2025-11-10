@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+}
+
+.parentContainer{
+    display: grid;
+    border: 2px solid black;
+    /*explicit grid specifications, fr as in fractional unit like a fraction of the space in container if that makes sense*/
+    grid-template-columns: repeat(3,2fr);
+    grid-template-rows: repeat(3,1fr);
+    /*Should only apply to the implicit grid*/
+    grid-auto-rows: minmax(200px, auto);
+    grid-auto-columns: minmax(200px, auto);
+    /*Could use grid gap but would need me to use same values i think for the gutters*/
+    grid-row-gap: 50px;
+    grid-column-gap: 25px
+}
+.gridItems{
+    padding: 100px;
+    text-align: center;
+    border: 2px dotted black;
+}
+
+.gridItems:nth-child(even){
+    border: 2px solid black;
+}
