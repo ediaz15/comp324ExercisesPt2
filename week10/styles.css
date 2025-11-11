@@ -2,3 +2,63 @@ h1 {
     color: green;
 }
 
+.headerArea{
+    border: 2px solid black;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.inputArea{
+    border: 2px solid gray;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding:10px;
+}
+
+.outputArea{
+    padding: 10px;
+    border: 2px solid red;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5,1fr);
+}
+
+.headerAreaItems{
+    display: flex;
+    flex-direction: column;
+    border: 2px dashed black;
+}
+
+.inputAreaItems{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 2px dotted gray;
+}
+
+.inputAreaItems > button {
+    border: transparent;
+    padding: 10px;
+}
+
+.inputAreaItems > button:hover{
+    background-color: gray;  
+}
+ /*I never knew i could use > until now! Though could be a good idea to id stuff just to be concise with other functions!!*/
+.inputAreaItems > input{
+    padding: 100px;
+}
+
+.outputAreaItems{
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    /*centered using flexbox!*/
+    align-items: center;
+    justify-content: center;
+    /*Prevent overflow, use wrap value*/
+    flex-wrap: wrap;
+    border: 2px dotted red;
+}
