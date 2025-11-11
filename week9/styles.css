@@ -14,20 +14,26 @@ body {
     grid-column-gap: 30px
 }
 
+#topText{
+    padding-top: 100px;
+}
 .gridItems{
-    padding: 100px;
     text-align: center;
     border: 2px dotted black;
 }
+
 
 .gridItems:nth-child(even){
     border: 2px solid black;
 }
 
-
+.noteControls{
+    padding: 10%;
+    border: 2px solid black;
+}
 .midContainer{
     margin: auto;
-    heigh: 50%;
+    height: 50%;
     width: 75%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -44,11 +50,15 @@ body {
 }
 
 .ImageSection{
-    padding: 10%;
     margin-bottom: 15px;
     border: 2px dotted blue;
 }
 
 .textSection{
     border: 2px solid purple;
+}
+
+#placeholder{
+    padding: 0;
+    object-fit: cover;
 }
