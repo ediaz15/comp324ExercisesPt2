@@ -62,7 +62,7 @@ body {
 /*
 Learned from here: 
 https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout/Grid_template_areas
-looks like it uses the start end stuff [prob for more]
+looks like it uses the start end stuff [prob for more], this stems into week 10, but wanted to see the difference here!
 */
 .gridArea{
     display: grid;
