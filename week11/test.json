@@ -1,0 +1,31 @@
+
+[
+    {
+        "userID" : 1,
+        "name": "Erick",
+        "locations":[{
+                "virtual":"Zoom",
+                "inPerson":"Class",
+                "other":"Home"
+            }]
+    },
+    {
+        "userID": 2,
+        "name":"Prof Hayward",
+        "locations": [{
+                "inPerson":[
+                    "Class", "Office Hours"
+                ],
+                "other":"Home"
+            }]
+    },
+    {
+        "userID": 3,
+        "name": "roommate",
+        "locations":[{
+                "virtual":"Zoom",
+                "inPerson":"Class",
+                "other":"Home"
+            }]
+    }
+]
